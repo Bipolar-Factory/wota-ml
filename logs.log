@@ -1,0 +1,506 @@
+2021-12-09 11:05:47,319:INFO:Initializing load_model()
+2021-12-09 11:05:47,319:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=./models/knn_model_8dec2021.pkl)
+2021-12-09 11:07:58,023:INFO:Initializing load_model()
+2021-12-09 11:07:58,023:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=models/knn_model_8dec2021.pkl)
+2021-12-09 11:08:17,085:INFO:Initializing load_model()
+2021-12-09 11:08:17,086:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=./models/knn_model_8dec2021)
+2021-12-09 11:08:27,022:INFO:Initializing load_model()
+2021-12-09 11:08:27,023:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=./models/knn_model_8dec2021)
+2021-12-09 11:08:30,822:INFO:Initializing predict_model()
+2021-12-09 11:08:30,822:INFO:predict_model(display=None, ml_usecase=MLUsecase.CLASSIFICATION, verbose=True, round=4, raw_score=False, encoded_labels=False, probability_threshold=None, estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='zone')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='zone')),
+                ('fix_perfect', Remove_100(target='zone')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 KNeighborsClassifier(metric='manhattan', n_jobs=-1,
+                                      n_neighbors=13, weights='distance')]]))
+2021-12-09 11:08:30,822:INFO:Checking exceptions
+2021-12-09 11:08:30,822:INFO:Preloading libraries
+2021-12-09 11:13:59,374:INFO:Initializing load_model()
+2021-12-09 11:13:59,374:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=./models/knn_model_8dec2021)
+2021-12-09 11:14:09,784:INFO:Initializing predict_model()
+2021-12-09 11:14:09,784:INFO:predict_model(display=None, ml_usecase=MLUsecase.CLASSIFICATION, verbose=True, round=4, raw_score=False, encoded_labels=False, probability_threshold=None, estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='zone')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='zone')),
+                ('fix_perfect', Remove_100(target='zone')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 KNeighborsClassifier(metric='manhattan', n_jobs=-1,
+                                      n_neighbors=13, weights='distance')]]))
+2021-12-09 11:14:09,784:INFO:Checking exceptions
+2021-12-09 11:14:09,784:INFO:Preloading libraries
+2021-12-09 11:14:35,265:INFO:Initializing load_model()
+2021-12-09 11:14:35,265:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=./models/knn_model_8dec2021)
+2021-12-09 11:14:38,359:INFO:Initializing predict_model()
+2021-12-09 11:14:38,359:INFO:predict_model(display=None, ml_usecase=MLUsecase.CLASSIFICATION, verbose=True, round=4, raw_score=False, encoded_labels=False, probability_threshold=None, estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='zone')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='zone')),
+                ('fix_perfect', Remove_100(target='zone')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 KNeighborsClassifier(metric='manhattan', n_jobs=-1,
+                                      n_neighbors=13, weights='distance')]]))
+2021-12-09 11:14:38,360:INFO:Checking exceptions
+2021-12-09 11:14:38,360:INFO:Preloading libraries
+2021-12-09 11:15:13,108:INFO:Initializing load_model()
+2021-12-09 11:15:13,108:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=./models/knn_model_8dec2021)
+2021-12-09 11:15:22,034:INFO:Initializing predict_model()
+2021-12-09 11:15:22,034:INFO:predict_model(display=None, ml_usecase=MLUsecase.CLASSIFICATION, verbose=True, round=4, raw_score=False, encoded_labels=False, probability_threshold=None, estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='zone')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='zone')),
+                ('fix_perfect', Remove_100(target='zone')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 KNeighborsClassifier(metric='manhattan', n_jobs=-1,
+                                      n_neighbors=13, weights='distance')]]))
+2021-12-09 11:15:22,035:INFO:Checking exceptions
+2021-12-09 11:15:22,035:INFO:Preloading libraries
+2021-12-09 11:15:51,066:INFO:Initializing load_model()
+2021-12-09 11:15:51,066:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=./models/knn_model_8dec2021)
+2021-12-09 11:16:33,285:INFO:Initializing predict_model()
+2021-12-09 11:16:33,286:INFO:predict_model(display=None, ml_usecase=MLUsecase.CLASSIFICATION, verbose=True, round=4, raw_score=False, encoded_labels=False, probability_threshold=None, estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='zone')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='zone')),
+                ('fix_perfect', Remove_100(target='zone')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 KNeighborsClassifier(metric='manhattan', n_jobs=-1,
+                                      n_neighbors=13, weights='distance')]]))
+2021-12-09 11:16:33,286:INFO:Checking exceptions
+2021-12-09 11:16:33,287:INFO:Preloading libraries
+2021-12-09 11:17:10,548:INFO:Initializing load_model()
+2021-12-09 11:17:10,548:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=./models/knn_model_8dec2021)
+2021-12-09 11:17:36,280:INFO:Initializing predict_model()
+2021-12-09 11:17:36,280:INFO:predict_model(display=None, ml_usecase=MLUsecase.CLASSIFICATION, verbose=True, round=4, raw_score=False, encoded_labels=False, probability_threshold=None, estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='zone')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='zone')),
+                ('fix_perfect', Remove_100(target='zone')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 KNeighborsClassifier(metric='manhattan', n_jobs=-1,
+                                      n_neighbors=13, weights='distance')]]))
+2021-12-09 11:17:36,280:INFO:Checking exceptions
+2021-12-09 11:17:36,281:INFO:Preloading libraries
+2021-12-09 11:18:01,258:INFO:Initializing load_model()
+2021-12-09 11:18:01,258:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=./models/knn_model_8dec2021)
+2021-12-09 11:18:42,036:INFO:Initializing predict_model()
+2021-12-09 11:18:42,037:INFO:predict_model(display=None, ml_usecase=MLUsecase.CLASSIFICATION, verbose=True, round=4, raw_score=False, encoded_labels=False, probability_threshold=None, estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='zone')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='zone')),
+                ('fix_perfect', Remove_100(target='zone')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 KNeighborsClassifier(metric='manhattan', n_jobs=-1,
+                                      n_neighbors=13, weights='distance')]]))
+2021-12-09 11:18:42,037:INFO:Checking exceptions
+2021-12-09 11:18:42,037:INFO:Preloading libraries
+2021-12-09 11:19:09,997:INFO:Initializing load_model()
+2021-12-09 11:19:09,997:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=./models/knn_model_8dec2021)
+2021-12-09 11:19:19,028:INFO:Initializing predict_model()
+2021-12-09 11:19:19,029:INFO:predict_model(display=None, ml_usecase=MLUsecase.CLASSIFICATION, verbose=True, round=4, raw_score=False, encoded_labels=False, probability_threshold=None, estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='zone')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='zone')),
+                ('fix_perfect', Remove_100(target='zone')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 KNeighborsClassifier(metric='manhattan', n_jobs=-1,
+                                      n_neighbors=13, weights='distance')]]))
+2021-12-09 11:19:19,029:INFO:Checking exceptions
+2021-12-09 11:19:19,029:INFO:Preloading libraries
+2021-12-09 11:21:00,198:INFO:Initializing predict_model()
+2021-12-09 11:21:00,198:INFO:predict_model(display=None, ml_usecase=MLUsecase.CLASSIFICATION, verbose=True, round=4, raw_score=False, encoded_labels=False, probability_threshold=None, estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='zone')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='zone')),
+                ('fix_perfect', Remove_100(target='zone')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 KNeighborsClassifier(metric='manhattan', n_jobs=-1,
+                                      n_neighbors=13, weights='distance')]]))
+2021-12-09 11:21:00,199:INFO:Checking exceptions
+2021-12-09 11:21:00,199:INFO:Preloading libraries
+2021-12-09 11:23:18,925:INFO:Initializing load_model()
+2021-12-09 11:23:18,925:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=./models/knn_model_8dec2021)
+2021-12-09 11:23:30,074:INFO:Initializing predict_model()
+2021-12-09 11:23:30,075:INFO:predict_model(display=None, ml_usecase=MLUsecase.CLASSIFICATION, verbose=True, round=4, raw_score=False, encoded_labels=False, probability_threshold=None, estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='zone')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='zone')),
+                ('fix_perfect', Remove_100(target='zone')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 KNeighborsClassifier(metric='manhattan', n_jobs=-1,
+                                      n_neighbors=13, weights='distance')]]))
+2021-12-09 11:23:30,075:INFO:Checking exceptions
+2021-12-09 11:23:30,075:INFO:Preloading libraries
+2021-12-09 11:23:50,533:INFO:Initializing load_model()
+2021-12-09 11:23:50,533:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=./models/knn_model_8dec2021)
+2021-12-09 11:24:42,982:INFO:Initializing predict_model()
+2021-12-09 11:24:42,982:INFO:predict_model(display=None, ml_usecase=MLUsecase.CLASSIFICATION, verbose=True, round=4, raw_score=False, encoded_labels=False, probability_threshold=None, estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='zone')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='zone')),
+                ('fix_perfect', Remove_100(target='zone')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 KNeighborsClassifier(metric='manhattan', n_jobs=-1,
+                                      n_neighbors=13, weights='distance')]]))
+2021-12-09 11:24:42,983:INFO:Checking exceptions
+2021-12-09 11:24:42,983:INFO:Preloading libraries
+2021-12-09 11:25:06,797:INFO:Initializing load_model()
+2021-12-09 11:25:06,797:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=./models/knn_model_8dec2021)
+2021-12-09 11:27:19,763:INFO:Initializing load_model()
+2021-12-09 11:27:19,764:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=./models/knn_model_8dec2021)
+2021-12-09 11:27:37,288:INFO:Initializing load_model()
+2021-12-09 11:27:37,288:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=./models/knn_model_8dec2021)
+2021-12-09 11:32:43,144:INFO:Initializing predict_model()
+2021-12-09 11:32:43,145:INFO:predict_model(display=None, ml_usecase=MLUsecase.CLASSIFICATION, verbose=True, round=4, raw_score=False, encoded_labels=False, probability_threshold=None, estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='zone')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='zone')),
+                ('fix_perfect', Remove_100(target='zone')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 KNeighborsClassifier(metric='manhattan', n_jobs=-1,
+                                      n_neighbors=13, weights='distance')]]))
+2021-12-09 11:32:43,145:INFO:Checking exceptions
+2021-12-09 11:32:43,145:INFO:Preloading libraries
+2021-12-09 11:33:10,794:INFO:Initializing load_model()
+2021-12-09 11:33:10,795:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=./models/knn_model_8dec2021)
+2021-12-09 11:33:18,723:INFO:Initializing predict_model()
+2021-12-09 11:33:18,723:INFO:predict_model(display=None, ml_usecase=MLUsecase.CLASSIFICATION, verbose=True, round=4, raw_score=False, encoded_labels=False, probability_threshold=None, estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='zone')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='zone')),
+                ('fix_perfect', Remove_100(target='zone')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 KNeighborsClassifier(metric='manhattan', n_jobs=-1,
+                                      n_neighbors=13, weights='distance')]]))
+2021-12-09 11:33:18,723:INFO:Checking exceptions
+2021-12-09 11:33:18,723:INFO:Preloading libraries
+2021-12-09 11:33:37,383:INFO:Initializing load_model()
+2021-12-09 11:33:37,383:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=./models/knn_model_8dec2021)
+2021-12-09 11:35:39,968:INFO:Initializing predict_model()
+2021-12-09 11:35:39,968:INFO:predict_model(display=None, ml_usecase=MLUsecase.CLASSIFICATION, verbose=True, round=4, raw_score=False, encoded_labels=False, probability_threshold=None, estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='zone')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='zone')),
+                ('fix_perfect', Remove_100(target='zone')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 KNeighborsClassifier(metric='manhattan', n_jobs=-1,
+                                      n_neighbors=13, weights='distance')]]))
+2021-12-09 11:35:39,969:INFO:Checking exceptions
+2021-12-09 11:35:39,969:INFO:Preloading libraries
+2021-12-09 11:36:15,023:INFO:Initializing load_model()
+2021-12-09 11:36:15,024:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=./models/knn_model_8dec2021)
+2021-12-09 11:37:25,236:INFO:Initializing predict_model()
+2021-12-09 11:37:25,237:INFO:predict_model(display=None, ml_usecase=MLUsecase.CLASSIFICATION, verbose=True, round=4, raw_score=False, encoded_labels=False, probability_threshold=None, estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='zone')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='zone')),
+                ('fix_perfect', Remove_100(target='zone')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 KNeighborsClassifier(metric='manhattan', n_jobs=-1,
+                                      n_neighbors=13, weights='distance')]]))
+2021-12-09 11:37:25,237:INFO:Checking exceptions
+2021-12-09 11:37:25,237:INFO:Preloading libraries
+2021-12-09 11:40:24,280:INFO:Initializing load_model()
+2021-12-09 11:40:24,280:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=./models/knn_model_8dec2021)
+2021-12-09 11:40:30,298:INFO:Initializing load_model()
+2021-12-09 11:40:30,298:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=./models/knn_model_8dec2021)
+2021-12-09 11:41:08,794:INFO:Initializing predict_model()
+2021-12-09 11:41:08,794:INFO:predict_model(display=None, ml_usecase=MLUsecase.CLASSIFICATION, verbose=True, round=4, raw_score=False, encoded_labels=False, probability_threshold=None, estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='zone')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 RandomForestClassifier(bootstrap=False,
+                                        class_weight='balanced_subsample',
+                                        max_depth=6, max_features='log2',
+                                        min_impurity_decrease=0.001,
+                                        min_samples_leaf=6, min_samples_split=9,
+                                        n_estimators=190, n_jobs=-1,
+                                        random_state=123)]]))
+2021-12-09 11:41:08,794:INFO:Checking exceptions
+2021-12-09 11:41:08,794:INFO:Preloading libraries
+2021-12-09 11:41:31,469:INFO:Initializing load_model()
+2021-12-09 11:41:31,469:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=./models/knn_model_8dec2021)
+2021-12-09 11:42:18,487:INFO:Initializing load_model()
+2021-12-09 11:42:18,487:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=./models/knn_model_8dec2021)
+2021-12-09 11:42:23,662:INFO:Initializing load_model()
+2021-12-09 11:42:23,662:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=./models/knn_model_8dec2021)
+2021-12-09 11:42:29,340:INFO:Initializing predict_model()
+2021-12-09 11:42:29,340:INFO:predict_model(display=None, ml_usecase=MLUsecase.CLASSIFICATION, verbose=True, round=4, raw_score=False, encoded_labels=False, probability_threshold=None, estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='zone')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 RandomForestClassifier(bootstrap=False,
+                                        class_weight='balanced_subsample',
+                                        max_depth=6, max_features='log2',
+                                        min_impurity_decrease=0.001,
+                                        min_samples_leaf=6, min_samples_split=9,
+                                        n_estimators=190, n_jobs=-1,
+                                        random_state=123)]]))
+2021-12-09 11:42:29,340:INFO:Checking exceptions
+2021-12-09 11:42:29,341:INFO:Preloading libraries
+2021-12-09 11:43:10,265:INFO:Initializing predict_model()
+2021-12-09 11:43:10,265:INFO:predict_model(display=None, ml_usecase=MLUsecase.CLASSIFICATION, verbose=True, round=4, raw_score=False, encoded_labels=False, probability_threshold=None, estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='zone')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 RandomForestClassifier(bootstrap=False,
+                                        class_weight='balanced_subsample',
+                                        max_depth=6, max_features='log2',
+                                        min_impurity_decrease=0.001,
+                                        min_samples_leaf=6, min_samples_split=9,
+                                        n_estimators=190, n_jobs=-1,
+                                        random_state=123)]]))
+2021-12-09 11:43:10,265:INFO:Checking exceptions
+2021-12-09 11:43:10,265:INFO:Preloading libraries
+2021-12-09 11:43:29,975:INFO:Initializing load_model()
+2021-12-09 11:43:29,975:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=./models/knn_model_8dec2021)
