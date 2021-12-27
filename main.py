@@ -3,21 +3,30 @@ import pandas as pd
 import numpy as np
 from pycaret.classification import load_model, predict_model
 import time
+from config import MOVING_AVG_CONSTANT, SUPER_ZONE1_MODEL_PATH, SUPER_ZONE2_MODEL_PATH, ZONE_IN_EACH_SUPER_ZONE, \
+    ZONE1_STATIONS, ZONE2_STATIONS
 
 app = Flask(__name__)
-model = load_model('./models/14dec_MA_lr')
-df = pd.DataFrame(columns=['stat1', 'stat2', 'stat3', 'stat4', 'stat5', 'stat6', 'stat7', 'stat8', 'stat9', 'stat10',
-                           'stat1.1', 'stat2.1', 'stat3.1', 'stat4.1', 'stat5.1', 'stat6.1', 'stat7.1', 'stat8.1',
-                           'stat9.1', 'stat10.1'])
+super_zone1_model = None
+super_zone2_model = None
 
 dict_tag_id = {}
 
-moving_avg_count = 10
+moving_avg_count = MOVING_AVG_CONSTANT
 
-mapping_dict = {'zone1': 0, 'zone2': 1, 'zone3': 2, 'zone4': 3, 'zone5': 4, 'zone6': 5, 'zone7': 6, 'zone8': 7,
-                'zone9': 8, 'zone10': 9, 'zone11': 10, 'zone12': 11, 'zone13': 12, 'zone14': 13, 'zone15': 14,
-                'zone16': 15, 'zone17': 16, 'zone18': 17, 'zone19': 18, 'zone20': 19}
-reverse_mapping_dict = {value: key for key, value in mapping_dict.items()}
+
+def load_models(models_path: dict) -> None:
+    """
+    Loads both the model to infernce later
+
+    :param models_path: takes model path as an argument to load the model
+    :return: None
+    """
+    global super_zone1_model, super_zone2_model
+
+    super_zone1_model = load_model(models_path['super_zone1'])
+    super_zone2_model = load_model(models_path['super_zone2'])
+    print(type(super_zone2_model))
 
 
 def get_moving_average(dataframe):
@@ -36,10 +45,25 @@ def get_moving_average(dataframe):
 
 def get_prediction(dataframe):
     """
+    predict the output based on the model and the inputs
 
     :param dataframe: accepts a dataframe
     :return: label came from the model
     """
+
+    values = dataframe.values
+    index = np.argmin(values[0])
+
+    # checks if it lies in the first zone or second
+    # since first zone has 18 stations and index starts with zero we are subtracting 1 from zone_in_each_super_zone
+    # if present in first zone the dataframe is trimmed into the specific stations that are necessary for the model prediction
+    # i.e for zone 1 we will have from station 1-station 10 and for zone 2 we will have dataframe station 11-station20
+    if index <= ZONE_IN_EACH_SUPER_ZONE - 1:
+        model = super_zone1_model
+        dataframe = dataframe[ZONE1_STATIONS]
+    else:
+        model = super_zone2_model
+        dataframe = dataframe[ZONE2_STATIONS]
 
     preds = predict_model(model, data=dataframe)
     return preds['Label'].values[0]
@@ -73,9 +97,13 @@ def return_zone():
 
         dict_tag_id[tag_id] = pd.DataFrame(columns=
                                            ['stat1', 'stat2', 'stat3', 'stat4', 'stat5', 'stat6', 'stat7', 'stat8',
-                                            'stat9', 'stat10', 'stat1.1', 'stat2.1', 'stat3.1', 'stat4.1', 'stat5.1',
-                                            'stat6.1', 'stat7.1', 'stat8.1',
-                                            'stat9.1', 'stat10.1'])
+                                            'stat9', 'stat10', 'stat1.1', 'stat2.1', 'stat3.1', 'stat4.1',
+                                            'stat6.1', 'stat7.1', 'stat8.1', 'stat9.1',
+                                            'stat11', 'stat12', 'stat13', 'stat14', 'stat15', 'stat16', 'stat17',
+                                            'stat18',
+                                            'stat19', 'stat20', 'stat11.1', 'stat12.1', 'stat13.1', 'stat14.1',
+                                            'stat16.1', 'stat17.1', 'stat18.1', 'stat19.1',
+                                            ])
         print('Tag created')
 
     # appends the incoming data at the last
@@ -94,12 +122,30 @@ def return_zone():
                                                                int(data['station2.1']),
                                                                int(data['station3.1']),
                                                                int(data['station4.1']),
-                                                               int(data['station5.1']),
                                                                int(data['station6.1']),
                                                                int(data['station7.1']),
                                                                int(data['station8.1']),
                                                                int(data['station9.1']),
-                                                               int(data['station10.1'])]
+
+                                                               int(data['station11']),
+                                                               int(data['station12']),
+                                                               int(data['station13']),
+                                                               int(data['station14']),
+                                                               int(data['station15']),
+                                                               int(data['station16']),
+                                                               int(data['station17']),
+                                                               int(data['station18']),
+                                                               int(data['station19']),
+                                                               int(data['station20']),
+                                                               int(data['station11.1']),
+                                                               int(data['station12.1']),
+                                                               int(data['station13.1']),
+                                                               int(data['station14.1']),
+                                                               int(data['station16.1']),
+                                                               int(data['station17.1']),
+                                                               int(data['station18.1']),
+                                                               int(data['station19.1']),
+                                                               ]
 
     # checks if we have required amount of data point for the Moving average else return how many still needed.
 
@@ -108,13 +154,16 @@ def return_zone():
         dict_tag_id[tag_id] = dict_tag_id[tag_id].iloc[1:, :]
         dict_tag_id[tag_id].reset_index(drop=True, inplace=True)
         pred = get_prediction(preprocessed_df)
-        return f'{reverse_mapping_dict[pred]}'
+        end = time.time()
+        print(end - start)
+        return pred
     else:
-        return f"Needed {moving_avg_count} data point, currently have {dict_tag_id[tag_id].shape[0]} datapoints in tag {tag_id}."
+        return f"Needed {moving_avg_count} data point, currently have {dict_tag_id[tag_id].shape[0]} data-points in tag {tag_id}."
 
 
 # request type
-# curl -i -H "Content-Type: application/json" -X POST -d'{"station1":"-58", "station1.1":"-58","station2":"-58", "station2.1":"-58","station3":"-58", "station3.1":"-58",  "station4":"-58", "station4.1":"-58","station5":"-58", "station5.1":"-58","station6":"-58", "station6.1":"-58","station7":"-58", "station7.1":"-58","station8":"-58", "station8.1":"-58","station9":"-58", "station9.1":"-58","station10":"-58", "station10.1":"-58", "tag_id":"ee:72:32:32:21"}' http://localhost:5000/return_zone
+# curl -i -H "Content-Type: application/json" -X POST -d'{"station1":"-58", "station1.1":"-58","station2":"-58", "station2.1":"-58","station3":"-58", "station3.1":"-58",  "station4":"-58", "station4.1":"-58","station5":"-58","station6":"-58", "station6.1":"-58","station7":"-58", "station7.1":"-58","station8":"-58", "station8.1":"-58","station9":"-58", "station9.1":"-58","station10":"-58","station11":"-58", "station11.1":"-58","station12":"-58", "station12.1":"-58","station13":"-58", "station13.1":"-58",  "station14":"-58", "station14.1":"-58","station15":"-58","station16":"-58", "station16.1":"-58","station17":"-58", "station17.1":"-58","station18":"-58", "station18.1":"-58","station19":"-58", "station19.1":"-58","station20":"-58","tag_id":"ee:72:32:32:21"}' http://localhost:5000/return_zone
 
 if __name__ == "__main__":
+    load_models(models_path={'super_zone1': SUPER_ZONE1_MODEL_PATH, "super_zone2": SUPER_ZONE2_MODEL_PATH})
     app.run(port=5000, debug=True)
