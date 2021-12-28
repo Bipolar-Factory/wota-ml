@@ -1,8 +1,11 @@
-from flask import Flask, request
-import pandas as pd
-import numpy as np
-from pycaret.classification import load_model, predict_model
+import gc
 import time
+
+import numpy as np
+import pandas as pd
+from flask import Flask, request
+from pycaret.classification import load_model, predict_model
+
 from config import MOVING_AVG_CONSTANT, SUPER_ZONE1_MODEL_PATH, SUPER_ZONE2_MODEL_PATH, ZONE_IN_EACH_SUPER_ZONE, \
     ZONE1_STATIONS, ZONE2_STATIONS
 
@@ -11,13 +14,29 @@ super_zone1_model = None
 super_zone2_model = None
 
 dict_tag_id = {}
+dict_zone_counter = {}
 
 moving_avg_count = MOVING_AVG_CONSTANT
 
 
+def add_output_to_counter(tag_id: str, zone_name: str) -> None:
+    """
+    adds the zone to the counter how many times a zone is detected by the output
+    :param tag_id:  name of the tag
+    :param zone_name:  name of the zone
+    :return:
+    """
+    global dict_zone_counter
+
+    # if that tag is not present in the tag list creates the new dictionary key of that tag to process the allocation
+
+    dict_zone_counter[tag_id] = dict_zone_counter.get(tag_id, {})
+    dict_zone_counter[tag_id][zone_name] = dict_zone_counter[tag_id].get(zone_name, 0) + 1
+
+
 def load_models(models_path: dict) -> None:
     """
-    Loads both the model to infernce later
+    Loads both the model to inference later
 
     :param models_path: takes model path as an argument to load the model
     :return: None
@@ -26,7 +45,6 @@ def load_models(models_path: dict) -> None:
 
     super_zone1_model = load_model(models_path['super_zone1'])
     super_zone2_model = load_model(models_path['super_zone2'])
-    print(type(super_zone2_model))
 
 
 def get_moving_average(dataframe):
@@ -69,8 +87,41 @@ def get_prediction(dataframe):
     return preds['Label'].values[0]
 
 
+@app.route('/delete_allocation', methods=["GET", "POST"])
+def flush():
+    global dict_zone_counter, dict_tag_id
+
+    # clearing both the on the run dictionary objects
+    dict_zone_counter = {}
+    dict_tag_id = {}
+    gc.collect()
+    return "Cleared Zone Allocation from memory, ready to start new Session"
+
+
+@app.route('/zone_allocation', methods=["GET", "POST"])
+def return_zone_allocation():
+    # request type
+    # curl -i http://localhost:5000/zone_allocation
+    return dict_zone_counter
+
+
+@app.route('/zone_allocation_by_id', methods=["GET", "POST"])
+def return_zone_allocation_by_id():
+    # request type
+    # curl -i -H "Content-Type: application/json" -X POST -d'{"tag_id":"ee:72:32:32:21"}' http://localhost:5000/zone_allocation_by_id
+
+    global dict_zone_counter
+    data = request.json
+    tag_id = str(data['tag_id'])
+
+    return dict_zone_counter.get(tag_id, {})
+
+
 @app.route('/get_all_running_tags', methods=["GET", "POST"])
 def view_all_tags():
+    # request type
+    # curl -i http://localhost:5000/get_all_running_tags
+
     return f'<p>{list(dict_tag_id.keys())}</p>'
 
 
@@ -87,9 +138,12 @@ def return_zone():
 
     :return: either the zone name or the output for how many more records to fill on that tag
     """
+    global dict_tag_id, dict_zone_counter
+
     start = time.time()
     data = request.json
-    tag_id = data['tag_id']
+    tag_id = str(data['tag_id'])
+
     if tag_id is None:
         return '!!!! Tag id is missing'
     if tag_id not in dict_tag_id:
@@ -150,10 +204,18 @@ def return_zone():
     # checks if we have required amount of data point for the Moving average else return how many still needed.
 
     if dict_tag_id[tag_id].shape[0] == moving_avg_count:
+        # preprocess the input into the moving average
         preprocessed_df = get_moving_average(dict_tag_id[tag_id])
+
+        # removing the top element for moving average and resetting the index
         dict_tag_id[tag_id] = dict_tag_id[tag_id].iloc[1:, :]
         dict_tag_id[tag_id].reset_index(drop=True, inplace=True)
+
         pred = get_prediction(preprocessed_df)
+
+        # add output to the zone allocation
+        add_output_to_counter(tag_id, pred)
+
         end = time.time()
         print(end - start)
         return pred
