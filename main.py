@@ -1,5 +1,5 @@
 import gc
-import time
+# import time
 
 import numpy as np
 import pandas as pd
@@ -70,7 +70,7 @@ def get_prediction(dataframe):
     """
 
     values = dataframe.values
-    index = np.argmin(values[0])
+    index = np.argmax(values[0])
 
     # checks if it lies in the first zone or second
     # since first zone has 18 stations and index starts with zero we are subtracting 1 from zone_in_each_super_zone
@@ -140,7 +140,7 @@ def return_zone():
     """
     global dict_tag_id, dict_zone_counter
 
-    start = time.time()
+    # start = time.time()
     data = request.json
     tag_id = str(data['tag_id'])
 
@@ -216,8 +216,8 @@ def return_zone():
         # add output to the zone allocation
         add_output_to_counter(tag_id, pred)
 
-        end = time.time()
-        print(end - start)
+        # end = time.time()
+        # print(end - start)
         return pred
     else:
         return f"Needed {moving_avg_count} data point, currently have {dict_tag_id[tag_id].shape[0]} data-points in tag {tag_id}."

@@ -834,3 +834,819 @@
                                     random_state=123)]]))
 2021-12-27 13:16:37,719:INFO:Checking exceptions
 2021-12-27 13:16:37,719:INFO:Preloading libraries
+2022-01-03 09:16:49,576:INFO:Initializing load_model()
+2022-01-03 09:16:49,592:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=./models/26dec_avg_lr)
+2022-01-03 09:16:49,675:INFO:Initializing load_model()
+2022-01-03 09:16:49,675:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=./models/27dec_zone2_avg_lr)
+2022-01-03 09:17:01,723:INFO:Initializing load_model()
+2022-01-03 09:17:01,723:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=./models/26dec_avg_lr)
+2022-01-03 09:17:01,739:INFO:Initializing load_model()
+2022-01-03 09:17:01,739:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=./models/27dec_zone2_avg_lr)
+2022-01-03 09:17:35,378:INFO:Initializing load_model()
+2022-01-03 09:17:35,378:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=./models/26dec_avg_lr)
+2022-01-03 09:17:35,395:INFO:Initializing load_model()
+2022-01-03 09:17:35,395:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=./models/27dec_zone2_avg_lr)
+2022-01-03 09:17:57,942:INFO:Initializing predict_model()
+2022-01-03 09:17:57,942:INFO:predict_model(display=None, ml_usecase=MLUsecase.CLASSIFICATION, verbose=True, round=4, raw_score=False, encoded_labels=False, probability_threshold=None, estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='zone')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='zone')),
+                ('fix_perfect', 'passthrough'),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 LogisticRegression(C=3.882, class_weight={}, max_iter=1000,
+                                    random_state=123)]]))
+2022-01-03 09:17:57,942:INFO:Checking exceptions
+2022-01-03 09:17:57,942:INFO:Preloading libraries
+2022-01-03 09:18:16,389:INFO:Initializing predict_model()
+2022-01-03 09:18:16,389:INFO:predict_model(display=None, ml_usecase=MLUsecase.CLASSIFICATION, verbose=True, round=4, raw_score=False, encoded_labels=False, probability_threshold=None, estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='zone')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='zone')),
+                ('fix_perfect', 'passthrough'),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 LogisticRegression(C=3.882, class_weight={}, max_iter=1000,
+                                    random_state=123)]]))
+2022-01-03 09:18:16,389:INFO:Checking exceptions
+2022-01-03 09:18:16,389:INFO:Preloading libraries
+2022-01-03 09:18:44,851:INFO:Initializing load_model()
+2022-01-03 09:18:44,852:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=./models/26dec_avg_lr)
+2022-01-03 09:18:44,860:INFO:Initializing load_model()
+2022-01-03 09:18:44,868:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=./models/27dec_zone2_avg_lr)
+2022-01-03 09:18:56,416:INFO:Initializing predict_model()
+2022-01-03 09:18:56,416:INFO:predict_model(display=None, ml_usecase=MLUsecase.CLASSIFICATION, verbose=True, round=4, raw_score=False, encoded_labels=False, probability_threshold=None, estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='zone')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='zone')),
+                ('fix_perfect', 'passthrough'),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 LogisticRegression(C=3.882, class_weight={}, max_iter=1000,
+                                    random_state=123)]]))
+2022-01-03 09:18:56,416:INFO:Checking exceptions
+2022-01-03 09:18:56,416:INFO:Preloading libraries
+2022-01-03 09:19:21,760:INFO:Initializing load_model()
+2022-01-03 09:19:21,760:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=./models/26dec_avg_lr)
+2022-01-03 09:19:21,777:INFO:Initializing load_model()
+2022-01-03 09:19:21,777:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=./models/27dec_zone2_avg_lr)
+2022-01-03 09:19:32,560:INFO:Initializing predict_model()
+2022-01-03 09:19:32,560:INFO:predict_model(display=None, ml_usecase=MLUsecase.CLASSIFICATION, verbose=True, round=4, raw_score=False, encoded_labels=False, probability_threshold=None, estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='zone')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='zone')),
+                ('fix_perfect', 'passthrough'),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 LogisticRegression(C=9.984, class_weight='balanced',
+                                    max_iter=1000, random_state=123)]]))
+2022-01-03 09:19:32,560:INFO:Checking exceptions
+2022-01-03 09:19:32,560:INFO:Preloading libraries
+2022-01-03 09:19:55,091:INFO:Initializing predict_model()
+2022-01-03 09:19:55,091:INFO:predict_model(display=None, ml_usecase=MLUsecase.CLASSIFICATION, verbose=True, round=4, raw_score=False, encoded_labels=False, probability_threshold=None, estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='zone')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='zone')),
+                ('fix_perfect', 'passthrough'),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 LogisticRegression(C=9.984, class_weight='balanced',
+                                    max_iter=1000, random_state=123)]]))
+2022-01-03 09:19:55,091:INFO:Checking exceptions
+2022-01-03 09:19:55,091:INFO:Preloading libraries
+2022-01-03 09:20:08,630:INFO:Initializing predict_model()
+2022-01-03 09:20:08,630:INFO:predict_model(display=None, ml_usecase=MLUsecase.CLASSIFICATION, verbose=True, round=4, raw_score=False, encoded_labels=False, probability_threshold=None, estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='zone')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='zone')),
+                ('fix_perfect', 'passthrough'),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 LogisticRegression(C=9.984, class_weight='balanced',
+                                    max_iter=1000, random_state=123)]]))
+2022-01-03 09:20:08,630:INFO:Checking exceptions
+2022-01-03 09:20:08,630:INFO:Preloading libraries
+2022-01-03 09:20:22,272:INFO:Initializing predict_model()
+2022-01-03 09:20:22,280:INFO:predict_model(display=None, ml_usecase=MLUsecase.CLASSIFICATION, verbose=True, round=4, raw_score=False, encoded_labels=False, probability_threshold=None, estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='zone')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='zone')),
+                ('fix_perfect', 'passthrough'),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 LogisticRegression(C=9.984, class_weight='balanced',
+                                    max_iter=1000, random_state=123)]]))
+2022-01-03 09:20:22,281:INFO:Checking exceptions
+2022-01-03 09:20:22,281:INFO:Preloading libraries
+2022-01-03 09:20:24,335:INFO:Initializing predict_model()
+2022-01-03 09:20:24,335:INFO:predict_model(display=None, ml_usecase=MLUsecase.CLASSIFICATION, verbose=True, round=4, raw_score=False, encoded_labels=False, probability_threshold=None, estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='zone')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='zone')),
+                ('fix_perfect', 'passthrough'),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 LogisticRegression(C=9.984, class_weight='balanced',
+                                    max_iter=1000, random_state=123)]]))
+2022-01-03 09:20:24,335:INFO:Checking exceptions
+2022-01-03 09:20:24,335:INFO:Preloading libraries
+2022-01-03 09:20:25,793:INFO:Initializing predict_model()
+2022-01-03 09:20:25,793:INFO:predict_model(display=None, ml_usecase=MLUsecase.CLASSIFICATION, verbose=True, round=4, raw_score=False, encoded_labels=False, probability_threshold=None, estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='zone')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='zone')),
+                ('fix_perfect', 'passthrough'),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 LogisticRegression(C=9.984, class_weight='balanced',
+                                    max_iter=1000, random_state=123)]]))
+2022-01-03 09:20:25,793:INFO:Checking exceptions
+2022-01-03 09:20:25,793:INFO:Preloading libraries
+2022-01-03 09:20:27,247:INFO:Initializing predict_model()
+2022-01-03 09:20:27,247:INFO:predict_model(display=None, ml_usecase=MLUsecase.CLASSIFICATION, verbose=True, round=4, raw_score=False, encoded_labels=False, probability_threshold=None, estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='zone')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='zone')),
+                ('fix_perfect', 'passthrough'),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 LogisticRegression(C=9.984, class_weight='balanced',
+                                    max_iter=1000, random_state=123)]]))
+2022-01-03 09:20:27,247:INFO:Checking exceptions
+2022-01-03 09:20:27,247:INFO:Preloading libraries
+2022-01-03 09:20:28,761:INFO:Initializing predict_model()
+2022-01-03 09:20:28,761:INFO:predict_model(display=None, ml_usecase=MLUsecase.CLASSIFICATION, verbose=True, round=4, raw_score=False, encoded_labels=False, probability_threshold=None, estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='zone')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='zone')),
+                ('fix_perfect', 'passthrough'),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 LogisticRegression(C=9.984, class_weight='balanced',
+                                    max_iter=1000, random_state=123)]]))
+2022-01-03 09:20:28,761:INFO:Checking exceptions
+2022-01-03 09:20:28,761:INFO:Preloading libraries
+2022-01-03 09:20:44,936:INFO:Initializing predict_model()
+2022-01-03 09:20:44,936:INFO:predict_model(display=None, ml_usecase=MLUsecase.CLASSIFICATION, verbose=True, round=4, raw_score=False, encoded_labels=False, probability_threshold=None, estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='zone')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='zone')),
+                ('fix_perfect', 'passthrough'),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 LogisticRegression(C=9.984, class_weight='balanced',
+                                    max_iter=1000, random_state=123)]]))
+2022-01-03 09:20:44,936:INFO:Checking exceptions
+2022-01-03 09:20:44,936:INFO:Preloading libraries
+2022-01-03 09:21:20,680:INFO:Initializing load_model()
+2022-01-03 09:21:20,680:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=./models/26dec_avg_lr)
+2022-01-03 09:21:20,716:INFO:Initializing load_model()
+2022-01-03 09:21:20,716:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=./models/27dec_zone2_avg_lr)
+2022-01-03 09:22:06,651:INFO:Initializing predict_model()
+2022-01-03 09:22:06,651:INFO:predict_model(display=None, ml_usecase=MLUsecase.CLASSIFICATION, verbose=True, round=4, raw_score=False, encoded_labels=False, probability_threshold=None, estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='zone')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='zone')),
+                ('fix_perfect', 'passthrough'),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 LogisticRegression(C=3.882, class_weight={}, max_iter=1000,
+                                    random_state=123)]]))
+2022-01-03 09:22:06,651:INFO:Checking exceptions
+2022-01-03 09:22:06,651:INFO:Preloading libraries
+2022-01-03 09:22:11,765:INFO:Initializing predict_model()
+2022-01-03 09:22:11,765:INFO:predict_model(display=None, ml_usecase=MLUsecase.CLASSIFICATION, verbose=True, round=4, raw_score=False, encoded_labels=False, probability_threshold=None, estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='zone')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='zone')),
+                ('fix_perfect', 'passthrough'),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 LogisticRegression(C=3.882, class_weight={}, max_iter=1000,
+                                    random_state=123)]]))
+2022-01-03 09:22:11,765:INFO:Checking exceptions
+2022-01-03 09:22:11,765:INFO:Preloading libraries
+2022-01-03 09:22:13,106:INFO:Initializing predict_model()
+2022-01-03 09:22:13,106:INFO:predict_model(display=None, ml_usecase=MLUsecase.CLASSIFICATION, verbose=True, round=4, raw_score=False, encoded_labels=False, probability_threshold=None, estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='zone')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='zone')),
+                ('fix_perfect', 'passthrough'),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 LogisticRegression(C=3.882, class_weight={}, max_iter=1000,
+                                    random_state=123)]]))
+2022-01-03 09:22:13,106:INFO:Checking exceptions
+2022-01-03 09:22:13,106:INFO:Preloading libraries
+2022-01-03 09:22:14,371:INFO:Initializing predict_model()
+2022-01-03 09:22:14,371:INFO:predict_model(display=None, ml_usecase=MLUsecase.CLASSIFICATION, verbose=True, round=4, raw_score=False, encoded_labels=False, probability_threshold=None, estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='zone')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='zone')),
+                ('fix_perfect', 'passthrough'),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 LogisticRegression(C=3.882, class_weight={}, max_iter=1000,
+                                    random_state=123)]]))
+2022-01-03 09:22:14,371:INFO:Checking exceptions
+2022-01-03 09:22:14,371:INFO:Preloading libraries
+2022-01-03 09:22:15,792:INFO:Initializing predict_model()
+2022-01-03 09:22:15,792:INFO:predict_model(display=None, ml_usecase=MLUsecase.CLASSIFICATION, verbose=True, round=4, raw_score=False, encoded_labels=False, probability_threshold=None, estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='zone')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='zone')),
+                ('fix_perfect', 'passthrough'),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 LogisticRegression(C=3.882, class_weight={}, max_iter=1000,
+                                    random_state=123)]]))
+2022-01-03 09:22:15,792:INFO:Checking exceptions
+2022-01-03 09:22:15,792:INFO:Preloading libraries
+2022-01-03 09:22:17,224:INFO:Initializing predict_model()
+2022-01-03 09:22:17,224:INFO:predict_model(display=None, ml_usecase=MLUsecase.CLASSIFICATION, verbose=True, round=4, raw_score=False, encoded_labels=False, probability_threshold=None, estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='zone')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='zone')),
+                ('fix_perfect', 'passthrough'),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 LogisticRegression(C=3.882, class_weight={}, max_iter=1000,
+                                    random_state=123)]]))
+2022-01-03 09:22:17,224:INFO:Checking exceptions
+2022-01-03 09:22:17,224:INFO:Preloading libraries
+2022-01-03 09:22:21,258:INFO:Initializing predict_model()
+2022-01-03 09:22:21,258:INFO:predict_model(display=None, ml_usecase=MLUsecase.CLASSIFICATION, verbose=True, round=4, raw_score=False, encoded_labels=False, probability_threshold=None, estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='zone')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='zone')),
+                ('fix_perfect', 'passthrough'),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 LogisticRegression(C=3.882, class_weight={}, max_iter=1000,
+                                    random_state=123)]]))
+2022-01-03 09:22:21,258:INFO:Checking exceptions
+2022-01-03 09:22:21,258:INFO:Preloading libraries
+2022-01-03 09:23:44,412:INFO:Initializing load_model()
+2022-01-03 09:23:44,412:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=./models/26dec_avg_lr)
+2022-01-03 09:23:44,428:INFO:Initializing load_model()
+2022-01-03 09:23:44,428:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=./models/27dec_zone2_avg_lr)
+2022-01-03 09:23:55,053:INFO:Initializing load_model()
+2022-01-03 09:23:55,061:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=./models/26dec_avg_lr)
+2022-01-03 09:23:55,069:INFO:Initializing load_model()
+2022-01-03 09:23:55,069:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=./models/27dec_zone2_avg_lr)
+2022-01-03 09:24:22,710:INFO:Initializing predict_model()
+2022-01-03 09:24:22,710:INFO:predict_model(display=None, ml_usecase=MLUsecase.CLASSIFICATION, verbose=True, round=4, raw_score=False, encoded_labels=False, probability_threshold=None, estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='zone')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='zone')),
+                ('fix_perfect', 'passthrough'),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 LogisticRegression(C=3.882, class_weight={}, max_iter=1000,
+                                    random_state=123)]]))
+2022-01-03 09:24:22,710:INFO:Checking exceptions
+2022-01-03 09:24:22,710:INFO:Preloading libraries
+2022-01-03 09:24:23,632:INFO:Initializing predict_model()
+2022-01-03 09:24:23,632:INFO:predict_model(display=None, ml_usecase=MLUsecase.CLASSIFICATION, verbose=True, round=4, raw_score=False, encoded_labels=False, probability_threshold=None, estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='zone')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='zone')),
+                ('fix_perfect', 'passthrough'),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 LogisticRegression(C=3.882, class_weight={}, max_iter=1000,
+                                    random_state=123)]]))
+2022-01-03 09:24:23,632:INFO:Checking exceptions
+2022-01-03 09:24:23,632:INFO:Preloading libraries
+2022-01-03 09:24:47,845:INFO:Initializing load_model()
+2022-01-03 09:24:47,845:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=./models/26dec_avg_lr)
+2022-01-03 09:24:47,853:INFO:Initializing load_model()
+2022-01-03 09:24:47,853:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=./models/27dec_zone2_avg_lr)
+2022-01-03 09:24:55,000:INFO:Initializing predict_model()
+2022-01-03 09:24:55,000:INFO:predict_model(display=None, ml_usecase=MLUsecase.CLASSIFICATION, verbose=True, round=4, raw_score=False, encoded_labels=False, probability_threshold=None, estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='zone')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='zone')),
+                ('fix_perfect', 'passthrough'),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 LogisticRegression(C=3.882, class_weight={}, max_iter=1000,
+                                    random_state=123)]]))
+2022-01-03 09:24:55,000:INFO:Checking exceptions
+2022-01-03 09:24:55,000:INFO:Preloading libraries
+2022-01-03 09:24:55,857:INFO:Initializing predict_model()
+2022-01-03 09:24:55,857:INFO:predict_model(display=None, ml_usecase=MLUsecase.CLASSIFICATION, verbose=True, round=4, raw_score=False, encoded_labels=False, probability_threshold=None, estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='zone')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='zone')),
+                ('fix_perfect', 'passthrough'),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 LogisticRegression(C=3.882, class_weight={}, max_iter=1000,
+                                    random_state=123)]]))
+2022-01-03 09:24:55,857:INFO:Checking exceptions
+2022-01-03 09:24:55,857:INFO:Preloading libraries
+2022-01-03 09:24:58,419:INFO:Initializing predict_model()
+2022-01-03 09:24:58,427:INFO:predict_model(display=None, ml_usecase=MLUsecase.CLASSIFICATION, verbose=True, round=4, raw_score=False, encoded_labels=False, probability_threshold=None, estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='zone')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='zone')),
+                ('fix_perfect', 'passthrough'),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 LogisticRegression(C=3.882, class_weight={}, max_iter=1000,
+                                    random_state=123)]]))
+2022-01-03 09:24:58,427:INFO:Checking exceptions
+2022-01-03 09:24:58,427:INFO:Preloading libraries
+2022-01-03 09:25:09,635:INFO:Initializing predict_model()
+2022-01-03 09:25:09,635:INFO:predict_model(display=None, ml_usecase=MLUsecase.CLASSIFICATION, verbose=True, round=4, raw_score=False, encoded_labels=False, probability_threshold=None, estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='zone')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='zone')),
+                ('fix_perfect', 'passthrough'),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 LogisticRegression(C=9.984, class_weight='balanced',
+                                    max_iter=1000, random_state=123)]]))
+2022-01-03 09:25:09,635:INFO:Checking exceptions
+2022-01-03 09:25:09,635:INFO:Preloading libraries
+2022-01-03 09:25:11,998:INFO:Initializing predict_model()
+2022-01-03 09:25:11,998:INFO:predict_model(display=None, ml_usecase=MLUsecase.CLASSIFICATION, verbose=True, round=4, raw_score=False, encoded_labels=False, probability_threshold=None, estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='zone')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='zone')),
+                ('fix_perfect', 'passthrough'),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 LogisticRegression(C=9.984, class_weight='balanced',
+                                    max_iter=1000, random_state=123)]]))
+2022-01-03 09:25:11,998:INFO:Checking exceptions
+2022-01-03 09:25:11,998:INFO:Preloading libraries
+2022-01-03 09:25:21,407:INFO:Initializing predict_model()
+2022-01-03 09:25:21,407:INFO:predict_model(display=None, ml_usecase=MLUsecase.CLASSIFICATION, verbose=True, round=4, raw_score=False, encoded_labels=False, probability_threshold=None, estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='zone')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='zone')),
+                ('fix_perfect', 'passthrough'),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 LogisticRegression(C=9.984, class_weight='balanced',
+                                    max_iter=1000, random_state=123)]]))
+2022-01-03 09:25:21,407:INFO:Checking exceptions
+2022-01-03 09:25:21,407:INFO:Preloading libraries
+2022-01-03 09:25:22,922:INFO:Initializing predict_model()
+2022-01-03 09:25:22,922:INFO:predict_model(display=None, ml_usecase=MLUsecase.CLASSIFICATION, verbose=True, round=4, raw_score=False, encoded_labels=False, probability_threshold=None, estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='zone')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='zone')),
+                ('fix_perfect', 'passthrough'),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 LogisticRegression(C=9.984, class_weight='balanced',
+                                    max_iter=1000, random_state=123)]]))
+2022-01-03 09:25:22,922:INFO:Checking exceptions
+2022-01-03 09:25:22,922:INFO:Preloading libraries
+2022-01-03 09:25:24,220:INFO:Initializing predict_model()
+2022-01-03 09:25:24,220:INFO:predict_model(display=None, ml_usecase=MLUsecase.CLASSIFICATION, verbose=True, round=4, raw_score=False, encoded_labels=False, probability_threshold=None, estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='zone')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='zone')),
+                ('fix_perfect', 'passthrough'),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 LogisticRegression(C=9.984, class_weight='balanced',
+                                    max_iter=1000, random_state=123)]]))
+2022-01-03 09:25:24,220:INFO:Checking exceptions
+2022-01-03 09:25:24,220:INFO:Preloading libraries
+2022-01-03 09:25:26,716:INFO:Initializing predict_model()
+2022-01-03 09:25:26,716:INFO:predict_model(display=None, ml_usecase=MLUsecase.CLASSIFICATION, verbose=True, round=4, raw_score=False, encoded_labels=False, probability_threshold=None, estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='zone')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='zone')),
+                ('fix_perfect', 'passthrough'),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 LogisticRegression(C=9.984, class_weight='balanced',
+                                    max_iter=1000, random_state=123)]]))
+2022-01-03 09:25:26,716:INFO:Checking exceptions
+2022-01-03 09:25:26,716:INFO:Preloading libraries
