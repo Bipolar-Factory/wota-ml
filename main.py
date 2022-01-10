@@ -113,7 +113,7 @@ def return_zone_allocation():
 @app.route('/zone_allocation_by_id', methods=["GET", "POST"])
 def return_zone_allocation_by_id():
     # request type
-    # curl -i -H "Content-Type: application/json" -X POST -d'{"tag_id":"ee:72:32:32:21"}' http://localhost:5000/zone_allocation_by_id
+    # curl -i -H "Content-Type: application/json" -X POST -d'{"tag_id":"ee:72:32:32:21"}' http://localhost:4001/zone_allocation_by_id
 
     global dict_zone_counter
     data = request.json
@@ -125,7 +125,7 @@ def return_zone_allocation_by_id():
 @app.route('/get_all_running_tags', methods=["GET", "POST"])
 def view_all_tags():
     # request type
-    # curl -i http://localhost:5000/get_all_running_tags
+    # curl -i http://localhost:4001/get_all_running_tags
 
     return f'<p>{list(dict_tag_id.keys())}</p>'
 
