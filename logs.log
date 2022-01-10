@@ -1650,3 +1650,15 @@
                                     max_iter=1000, random_state=123)]]))
 2022-01-03 09:25:26,716:INFO:Checking exceptions
 2022-01-03 09:25:26,716:INFO:Preloading libraries
+2022-01-07 17:56:01,044:INFO:Initializing load_model()
+2022-01-07 17:56:01,059:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=./models/26dec_avg_lr)
+2022-01-07 17:56:01,154:INFO:Initializing load_model()
+2022-01-07 17:56:01,154:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=./models/27dec_zone2_avg_lr)
+2022-01-07 17:56:09,195:INFO:Initializing load_model()
+2022-01-07 17:56:09,195:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=./models/26dec_avg_lr)
+2022-01-07 17:56:09,205:INFO:Initializing load_model()
+2022-01-07 17:56:09,205:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=./models/27dec_zone2_avg_lr)
+2022-01-07 17:56:35,565:INFO:Initializing load_model()
+2022-01-07 17:56:35,575:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=./models/26dec_avg_lr)
+2022-01-07 17:56:35,580:INFO:Initializing load_model()
+2022-01-07 17:56:35,580:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=./models/27dec_zone2_avg_lr)

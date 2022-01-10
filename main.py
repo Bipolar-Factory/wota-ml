@@ -203,13 +203,20 @@ def return_zone():
 
     # checks if we have required amount of data point for the Moving average else return how many still needed.
 
-    if dict_tag_id[tag_id].shape[0] == moving_avg_count:
+    if dict_tag_id[tag_id].shape[0] >= moving_avg_count:
         # preprocess the input into the moving average
         preprocessed_df = get_moving_average(dict_tag_id[tag_id])
 
         # removing the top element for moving average and resetting the index
-        dict_tag_id[tag_id] = dict_tag_id[tag_id].iloc[1:, :]
+        dict_tag_id[tag_id] = dict_tag_id[tag_id].iloc[-(moving_avg_count-1):, :]
+
+        # resetting the index
         dict_tag_id[tag_id].reset_index(drop=True, inplace=True)
+
+        # dropping the duplicated index if any
+        dup_index = dict_tag_id[tag_id].index.duplicated()
+        if any(dup_index):
+            dict_tag_id[tag_id] = dict_tag_id[tag_id].loc[~dup_index]
 
         pred = get_prediction(preprocessed_df)
 
@@ -224,8 +231,8 @@ def return_zone():
 
 
 # request type
-# curl -i -H "Content-Type: application/json" -X POST -d'{"station1":"-58", "station1.1":"-58","station2":"-58", "station2.1":"-58","station3":"-58", "station3.1":"-58",  "station4":"-58", "station4.1":"-58","station5":"-58","station6":"-58", "station6.1":"-58","station7":"-58", "station7.1":"-58","station8":"-58", "station8.1":"-58","station9":"-58", "station9.1":"-58","station10":"-58","station11":"-58", "station11.1":"-58","station12":"-58", "station12.1":"-58","station13":"-58", "station13.1":"-58",  "station14":"-58", "station14.1":"-58","station15":"-58","station16":"-58", "station16.1":"-58","station17":"-58", "station17.1":"-58","station18":"-58", "station18.1":"-58","station19":"-58", "station19.1":"-58","station20":"-58","tag_id":"ee:72:32:32:21"}' http://localhost:5000/return_zone
+# curl -i -H "Content-Type: application/json" -X POST -d'{"station1":"-58", "station1.1":"-58","station2":"-58", "station2.1":"-58","station3":"-58", "station3.1":"-58",  "station4":"-58", "station4.1":"-58","station5":"-58","station6":"-58", "station6.1":"-58","station7":"-58", "station7.1":"-58","station8":"-58", "station8.1":"-58","station9":"-58", "station9.1":"-58","station10":"-58","station11":"-58", "station11.1":"-58","station12":"-58", "station12.1":"-58","station13":"-58", "station13.1":"-58",  "station14":"-58", "station14.1":"-58","station15":"-58","station16":"-58", "station16.1":"-58","station17":"-58", "station17.1":"-58","station18":"-58", "station18.1":"-58","station19":"-58", "station19.1":"-58","station20":"-58","tag_id":"ee:72:32:32:21"}' http://localhost:8000/return_zone
 
 if __name__ == "__main__":
     load_models(models_path={'super_zone1': SUPER_ZONE1_MODEL_PATH, "super_zone2": SUPER_ZONE2_MODEL_PATH})
-    app.run(port=5000, debug=True)
+    app.run(port=4000, debug=True)
