@@ -87,6 +87,11 @@ def get_prediction(dataframe):
     return preds['Label'].values[0]
 
 
+@app.route("/")
+def hello_world():
+    return "<p>Hello, World!</p>"
+
+
 @app.route('/delete_allocation', methods=["GET", "POST"])
 def flush():
     global dict_zone_counter, dict_tag_id
@@ -231,8 +236,8 @@ def return_zone():
 
 
 # request type
-# curl -i -H "Content-Type: application/json" -X POST -d'{"station1":"-58", "station1.1":"-58","station2":"-58", "station2.1":"-58","station3":"-58", "station3.1":"-58",  "station4":"-58", "station4.1":"-58","station5":"-58","station6":"-58", "station6.1":"-58","station7":"-58", "station7.1":"-58","station8":"-58", "station8.1":"-58","station9":"-58", "station9.1":"-58","station10":"-58","station11":"-58", "station11.1":"-58","station12":"-58", "station12.1":"-58","station13":"-58", "station13.1":"-58",  "station14":"-58", "station14.1":"-58","station15":"-58","station16":"-58", "station16.1":"-58","station17":"-58", "station17.1":"-58","station18":"-58", "station18.1":"-58","station19":"-58", "station19.1":"-58","station20":"-58","tag_id":"ee:72:32:32:21"}' http://localhost:8000/return_zone
+# curl -i -H "Content-Type: application/json" -X POST -d'{"station1":"-58", "station1.1":"-58","station2":"-58", "station2.1":"-58","station3":"-58", "station3.1":"-58",  "station4":"-58", "station4.1":"-58","station5":"-58","station6":"-58", "station6.1":"-58","station7":"-58", "station7.1":"-58","station8":"-58", "station8.1":"-58","station9":"-58", "station9.1":"-58","station10":"-58","station11":"-58", "station11.1":"-58","station12":"-58", "station12.1":"-58","station13":"-58", "station13.1":"-58",  "station14":"-58", "station14.1":"-58","station15":"-58","station16":"-58", "station16.1":"-58","station17":"-58", "station17.1":"-58","station18":"-58", "station18.1":"-58","station19":"-58", "station19.1":"-58","station20":"-58","tag_id":"ee:72:32:32:21"}' http://localhost:4001/return_zone
 
 if __name__ == "__main__":
     load_models(models_path={'super_zone1': SUPER_ZONE1_MODEL_PATH, "super_zone2": SUPER_ZONE2_MODEL_PATH})
-    app.run(port=4000, debug=True)
+    app.run(port=4001, debug=True)
