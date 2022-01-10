@@ -106,7 +106,7 @@ def flush():
 @app.route('/zone_allocation', methods=["GET", "POST"])
 def return_zone_allocation():
     # request type
-    # curl -i http://localhost:5000/zone_allocation
+    # curl -i http://localhost:4001/zone_allocation
     return dict_zone_counter
 
 
