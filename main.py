@@ -82,6 +82,7 @@ def get_prediction(dataframe):
     else:
         model = super_zone2_model
         dataframe = dataframe[ZONE2_STATIONS]
+    print(dataframe)
 
     preds = predict_model(model, data=dataframe)
     return preds['Label'].values[0]
@@ -148,6 +149,7 @@ def return_zone():
     # start = time.time()
     data = request.json
     tag_id = str(data['tag_id'])
+    # print(tag_id)
 
     if tag_id is None:
         return '!!!! Tag id is missing'
